@@ -9,8 +9,8 @@ export default class Rectangulo{
     }
 
     area_rectangulo(){
-        console.log(`
-           area = ${this.base * this.altura} 
-        `)
+           const area = this.base * this.altura
+           return area
     }
+
 }
