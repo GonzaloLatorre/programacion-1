@@ -3,7 +3,7 @@ const consumir_datos =  async () =>{
     const datos_recibidos = await fetch('https://jsonplaceholder.typicode.com/users')
 
     const datos = await datos_recibidos.json()
-
+    
     let lista_usuario = []
 
     datos.forEach(usuario => {

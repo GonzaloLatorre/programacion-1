@@ -21,7 +21,7 @@ const jijija =()=>{
     longitud =${cripto
 .length}
     ultimo elemento = ${final}
-    Posicion del elemento Helium = ${indice}
+    Posicion del elemento Helium = ${cripto[indice]}
     `
 
 
@@ -29,6 +29,7 @@ const jijija =()=>{
 const boton = document.getElementById("btn_mostrar")
 boton.addEventListener('click',jijija)
 
+//recorro el array
 const recorrer=()=>{
    
     let lista =[]
