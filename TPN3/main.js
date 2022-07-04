@@ -18,3 +18,21 @@ function listar (){
     producto.obtener_productos()
 }
 listar()
+
+function eliminar()
+{
+    let indice = localStorage.getItem("indice")
+    let productos = new Producto()
+    productos.eliminar_producto(indice)
+}
+document.getElementById("btn-eliminar").addEventListener("click", eliminar)
+
+function actualizar(){
+
+    let index = localStorage.getItem("indice_update")
+    
+    let producto = new Producto()
+    producto.actualizar_producto(index)
+
+}
+document.getElementById("btn_actualizar").addEventListener("click",actualizar)

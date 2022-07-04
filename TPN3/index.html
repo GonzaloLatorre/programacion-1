@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -19,6 +20,7 @@
         <div class="row mx-auto">
             <div class="col-lg-4">
                 
+                <div class="mb-3"></div>
                 <div class="mb-3">
                     <label for="form-label">Nombre</label>
                     <input id="inp_nombre" class="form-control" type="text">
@@ -37,6 +39,7 @@
                 </div>
 
                 <button id="btn_guardar" class="btn btn-success">Guardar</button>
+                <button style="display: none;" id="btn_actualizar" class="btn btn-primary">Actualizar</button>
 
             </div>
             <div class="col-lg-8">
@@ -55,11 +58,30 @@
                     </tbody>
 
                 </table>
+
+                <div id="mymodal" class="modal fade" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Eliminar</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <p>¿Esta seguro que queire ejecutar esta accion?</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button id="btn-eliminar" type="button" class="btn btn-primary">Eliminar</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="main.js" type="module"></script>
+    <script src="auxiliares.js"></script>
 </body>
 </html>
