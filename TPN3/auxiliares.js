@@ -19,3 +19,8 @@ function editar(index)
     document.getElementById("btn_actualizar").style.display = "block"
     document.getElementById("btn_guardar").style.display = "none"
 }
+
+function guardar_indice_encargo(index){
+
+    localStorage.setItem("indice_encargo",index)
+}

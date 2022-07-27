@@ -26,9 +26,9 @@ export default class Batman {
                         </div>
                     </div>
                 </div>
-            `
-            lista_pelis.push(pelis)
-            console.log(element)
+                `
+                lista_pelis.push(pelis)
+                console.log(element)
             });
             
           
